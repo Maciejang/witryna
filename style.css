@@ -20,13 +20,23 @@ footer{
     margin-top: 50%;
 }
 .navBar{
+    cursor: pointer;
+    user-select: none;
     position: fixed;
     list-style: none;
     background-image: linear-gradient(to bottom, white, gray);
     width: 100%;
     z-index: 10;
 }
-
+.navBar li a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-size: 150%;
+}
+.gameImg{
+    height: 100%;
+    width: 20%;
+}
 
 .category, .randomGame{
     margin-top: 10px;
