@@ -6,12 +6,12 @@ main{
     display: grid;   
     width: 80%;
     margin-left: 10%;
-    grid-template-rows: 1dp 1dp;
-    grid-template-columns: 1dp 1dp;
-    grid-template-areas: 
-    "baner baner"
-    "randomGame category";
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+
 footer{   
     background-color: black;
     color: white;
@@ -24,23 +24,28 @@ footer{
     list-style: none;
     background-image: linear-gradient(to bottom, white, gray);
     width: 100%;
+    z-index: 10;
 }
 
 
 .category, .randomGame{
+    margin-top: 10px;
+    margin-left: 10px;
     border-radius: 10px;
-    background-image: linear-gradient(100deg, rgb(156, 156, 156), rgb(218, 218, 218));
+    background-image: linear-gradient(to top, rgb(224, 224, 224), rgb(218, 218, 218));
+    min-height: 20vh;
     height: auto;
     z-index: 1;
 }
 .category{
-    grid-area: "category";
+    grid-area: 6 / 1 / 11 / 11;
+    width: 100%;
 }
 .randomGame{
-    grid-area: "randomGame";
+    grid-area: 1 / 6 / 6 / 11;
 }
 .baner{
-    grid-area: "baner";
+    grid-area: 1 / 1 / 6 / 6;
     z-index: 1;
 }
 .banerImg{
