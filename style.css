@@ -1,0 +1,197 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(26, 81, 175), rgb(248, 250, 255));
+}
+
+main{
+    display: grid;   
+    width: 80%;
+    margin-left: 10%;
+    grid-template-rows: 1dp 1dp;
+    grid-template-columns: 1dp 1dp;
+    grid-template-areas: 
+    "baner baner"
+    "randomGame category";
+}
+footer{   
+    background-color: black;
+    color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    margin-top: 50%;
+}
+.navBar{
+    position: fixed;
+    list-style: none;
+    background-image: linear-gradient(to bottom, white, gray);
+    width: 100%;
+}
+
+
+.category, .randomGame{
+    border-radius: 10px;
+    background-image: linear-gradient(100deg, rgb(156, 156, 156), rgb(218, 218, 218));
+    height: auto;
+    z-index: 1;
+}
+.category{
+    grid-area: "category";
+}
+.randomGame{
+    grid-area: "randomGame";
+}
+.baner{
+    grid-area: "baner";
+    z-index: 1;
+}
+.banerImg{
+    border-radius: 10px;
+    z-index: 1;
+    width:100%;
+    height:100%;
+}
+
+
+@keyframes move1{
+    0% {top: 500px; opacity: 0;}
+    5% {opacity: 0.3;}
+    25% {opacity: 0.5;}
+    100% {top: -5px; transform: rotate3d(1, 0, 1, 380deg); opacity: 0;}
+}
+@keyframes move2{
+    0% {top: 680px; opacity: 0;}
+    20% {opacity: 0.1;}
+    30% {opacity: 0.5;}
+    100% {top: -5px; transform: rotate3d(0, 1, 1, -180deg); opacity: 0;}
+}
+@keyframes move3{
+    0% {top: 600px; opacity: 0}
+    20% {opacity: 0.5;}
+    50% {transform: rotate(-100deg);}
+    100% {top: -50px; transform: rotate3d(1, 1, 1, 380deg);}
+}
+.bgbox:nth-of-type(1){
+    display: inline-block;
+    position: relative;
+    left: 110px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(245, 245, 245, 0);
+    animation-name: move1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+.bgbox:nth-of-type(2){
+    display: inline-block;
+    position: relative;
+    left: 700px;
+    height: 180px;
+    width: 180px;
+    background-color: rgb(245, 245, 245, 0);
+    animation-name: move2;
+    animation-duration: 32s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+}
+.bgbox:nth-of-type(3){
+    display: inline-block;
+    position: relative;
+    left: 900px;
+    height: 45px;
+    width: 45px;
+    animation-name: move3;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    background-color: rgb(245, 245, 245);
+}
+.bgbox:nth-of-type(4){
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    animation-name: move3;
+    animation-duration: 30s;
+    animation-delay: 13s;
+    animation-iteration-count: infinite;
+    background-color: rgb(245, 245, 245);
+}
+.bgbox:nth-of-type(5){
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 60%;
+    animation-name: move3;
+    animation-duration: 18s;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    background-color: rgb(245, 245, 245);
+}
+.bgbox:nth-of-type(6){
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(245, 245, 245, 0);
+    animation-name: move2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+.bgbox:nth-of-type(7){
+    display: inline-block;
+    position: relative;
+    left: 600px;
+    height: 180px;
+    width: 180px;
+    background-color: rgb(245, 245, 245, 0);
+    animation-name: move1;
+    animation-duration: 32s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+}
+.bgbox:nth-of-type(8){
+    display: inline-block;
+    position: relative;
+    left: 700px;
+    height: 80px;
+    width: 80px;
+    animation-name: move2;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    background-color: rgb(245, 245, 245);
+}
+.bgbox:nth-of-type(9){
+    display: inline-block;
+    left: 15%;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    animation-name: move1;
+    animation-duration: 30s;
+    animation-delay: 13s;
+    animation-iteration-count: infinite;
+    background-color: rgb(245, 245, 245);
+}
+.bgbox:nth-of-type(10){
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 63%;
+    animation-name: move2;
+    animation-duration: 18s;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    background-color: rgb(245, 245, 245);
+}
+.bgbox{
+    display: inline-block;
+    z-index: 0;
+    text-align: center;
+    opacity: 0;
+    font-size: 75px;
+}
