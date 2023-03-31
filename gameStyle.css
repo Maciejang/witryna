@@ -35,24 +35,27 @@ footer{
 }
 
 .gameTitle, .gameDescription{
-    margin-top: 10px;
     margin-left: 10px;
     border-radius: 10px;
     background-image: linear-gradient(to top, rgb(224, 224, 224), rgb(218, 218, 218));
+    display: grid;
     min-height: 20vh;
+    text-align: center;
     z-index: 1;
-    font-size: calc(1rem + 2vw);
+    font-size: calc(1rem + 1vw);
 }
-
 .gameTitle{
     grid-area: 1 / 4 / 3 / 11;
-    text-align: center;
     font-weight: 800;
-
+    font-size: calc(1rem + 2vw);
+    height: 30%;
 }
 .gameDescription{
+    margin-top: 1vh;
     grid-area: 3 / 4 / 11 / 11;
+    height: auto;
 }
+
 .gameImg{
     grid-area: 1 / 1 / 7 / 4;
 }
@@ -63,3 +66,18 @@ footer{
     width: 100%;
     height: auto;
 }
+
+@media only screen and (max-width: 540px) {
+    .gameDescription{
+        margin-top: -3vh;
+        grid-area: 3 / 4 / 11 / 11;
+        height: auto;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .gameDescription{
+        margin-top: -10vh;
+        grid-area: 3 / 4 / 11 / 11;
+        height: auto;
+    }
+  }
