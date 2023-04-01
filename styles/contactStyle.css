@@ -1,0 +1,70 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    background-image: linear-gradient(to bottom right, rgb(26, 81, 175), rgb(248, 250, 255));
+    overflow-x: hidden;
+    position: relative;
+}
+header{
+    width: 100%;
+}
+
+main{
+    display: grid;   
+    margin-top: 20%;
+    width: 80%;
+    margin-left: 10%;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+footer{   
+    background-color: black;
+    color: white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    margin-top: 100%;
+    height: auto;
+}
+.navBar{
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+    list-style: none;
+    background-image: linear-gradient(to bottom, white, gray);
+    margin: 0;
+    padding: 0;
+    width: 110%;
+    z-index: 10;
+}
+.navBar li a{
+    color: rgb(0,0,0);
+    font-size: 150%;
+    display: block;
+    padding: 8px;
+}
+.navBar li{
+    display: inline;
+    float: left;
+}
+
+.contact{
+    grid-area: 1 / 3 / 11 / 9;
+    margin-top: 10%;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, rgb(224, 224, 224), rgb(218, 218, 218));
+    min-height: 20vh;
+    height: auto;
+    z-index: 1;
+    height:auto;
+    font-size: calc(.8rem + 1vw);
+    justify-content: center;
+    
+}
+.contact input, .contact textarea, .contact select{
+    width: 100%;
+}

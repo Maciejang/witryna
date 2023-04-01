@@ -17,7 +17,7 @@ let gameTab = [doomEternal, RingFitAdventure, Persona, ElderScrollsOnline, WarOf
 let rand = Math.floor(Math.random()*gameTab.length);
 document.querySelector(".gameName").innerHTML = gameTab[rand].Name;
 document.querySelector(".gameCategory").innerHTML = gameTab[rand].Genre;
-document.querySelector(".gameLinkSpan").innerHTML = `Link: <a href="${gameTab[rand].Img}.html">${gameTab[rand].Name}</a>`;
+document.querySelector(".gameLinkSpan").innerHTML = `Link: <a href="./html/${gameTab[rand].Img}.html">${gameTab[rand].Name}</a>`;
 
 let gameGenre = document.querySelector(".selectGameCategory")
 
@@ -29,7 +29,7 @@ function search(){
             <div class="Game container">
             <span class="gameName">${gameTab[i].Name} </span> <br>
             <span class="gameCategory">${gameTab[i].Genre} </span> <br>
-            <span class="gameLinkSpan">Link: <a href="${gameTab[i].Img}.html">${gameTab[i].Name}</a></span><br>
+            <span class="gameLinkSpan">Link: <a href="./html/${gameTab[i].Img}.html">${gameTab[i].Name}</a></span><br>
             <img class="searchedImg" src="./images/${gameTab[i].Img}.png" alt="">
         </div>`
         }

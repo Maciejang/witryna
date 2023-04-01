@@ -6,6 +6,9 @@ body{
     overflow-x: hidden;
     position: relative;
 }
+header{
+    width: 100%;
+}
 
 main{
     display: grid;   
@@ -31,13 +34,20 @@ footer{
     position: fixed;
     list-style: none;
     background-image: linear-gradient(to bottom, white, gray);
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 110%;
     z-index: 10;
 }
 .navBar li a{
-    text-decoration: none;
     color: rgb(0,0,0);
     font-size: 150%;
+    display: block;
+    padding: 8px;
+}
+.navBar li{
+    display: inline;
+    float: left;
 }
 .gameImg{
     height: 100%;
