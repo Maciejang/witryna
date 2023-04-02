@@ -8,7 +8,7 @@ const doomEternal = new game("Doom Eternal", "FPS", "DoomEternal");
 const RingFitAdventure = new game("Ring fit adventure", "Sportowe", "RingFitAdventure");
 const Persona = new game("Persona", "JRPG", "Persona");
 const ElderScrollsOnline = new game("The Elder Scrolls Online", "MMORPG", "ElderScrollsOnline");
-const WarOfMine = new game("The War of Mine", "Survival", "TheWarOFMine");
+const WarOfMine = new game("The War of Mine", "Survival", "TheWarOfMine");
 const LifeIsStrange = new game("Life is Strange", "Przygodowe", "LifeIsStrange");
 const Sims4 = new game("The Sims 4", "Symulatorowe", "Sims");
 

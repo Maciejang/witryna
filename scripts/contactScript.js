@@ -23,6 +23,5 @@ document.querySelector(".Submit").addEventListener("click", _=>{
     }
     else{
         alert("Przesłano!");
-        document.querySelector(".contact").submit();
     }
 })
